@@ -1,0 +1,52 @@
+Traceback (most recent call last):
+  File "/home/anonym/.local/lib/python3.10/site-packages/kivy/lang/parser.py", line 553, in execute_directives
+    mod = importlib.__import__(package)
+  File "<frozen importlib._bootstrap>", line 1129, in __import__
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'kivymd.toolbar'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anonym/.local/lib/python3.10/site-packages/kivy/lang/parser.py", line 556, in execute_directives
+    mod = importlib.__import__(module_name)
+  File "<frozen importlib._bootstrap>", line 1129, in __import__
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'kivymd.toolbar'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anonym/Dokumente/GitHub/firstkivyproject/main.py", line 31, in main
+    from program import Program  # основной класс программы
+  File "/home/anonym/Dokumente/GitHub/firstkivyproject/program.py", line 16, in <module>
+    from uix.startscreen import StartScreen
+  File "/home/anonym/Dokumente/GitHub/firstkivyproject/uix/startscreen.py", line 9, in <module>
+    Builder.load_file(os.path.join(os.path.dirname(__file__), 'kvs', 'startscreen.kv'))
+  File "/home/anonym/.local/lib/python3.10/site-packages/kivy/lang/builder.py", line 305, in load_file
+    return self.load_string(data, **kwargs)
+  File "/home/anonym/.local/lib/python3.10/site-packages/kivy/lang/builder.py", line 372, in load_string
+    parser = Parser(content=string, filename=fn)
+  File "/home/anonym/.local/lib/python3.10/site-packages/kivy/lang/parser.py", line 483, in __init__
+    self.parse(content)
+  File "/home/anonym/.local/lib/python3.10/site-packages/kivy/lang/parser.py", line 590, in parse
+    self.execute_directives()
+  File "/home/anonym/.local/lib/python3.10/site-packages/kivy/lang/parser.py", line 565, in execute_directives
+    raise ParserException(self, ln,
+kivy.lang.parser.ParserException: Parser: File "/home/anonym/Dokumente/GitHub/firstkivyproject/uix/kvs/startscreen.kv", line 4:
+...
+      2:#:kivy 1.9.1
+      3:#:import _ localization._
+>>    4:#:import Toolbar kivymd.toolbar.Toolbar
+      5:#:import MDTabbedPanel kivymd.tabs.MDTabbedPanel
+      6:#:import MDTab kivymd.tabs.MDTab
+...
+Unable to import package 'kivymd.toolbar.Toolbar'
