@@ -8,6 +8,7 @@ directory = os.path.split(os.path.abspath(sys.argv[0]))[0]
 
 try:
     import kivy
+    import kivymd
     kivy.require('1.9.1')
 
     from kivy.app import App

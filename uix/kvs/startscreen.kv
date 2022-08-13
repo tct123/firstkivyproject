@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #:kivy 1.9.1
 #:import _ localization._
-#:import Toolbar kivymd.toolbar.Toolbar
+#:import MDTopAppBar kivymd.uix.toolbar.toolbar
 #:import MDTabbedPanel kivymd.tabs.MDTabbedPanel
 #:import MDTab kivymd.tabs.MDTab
 #:import EmptyScreen uix.emptyscreen.EmptyScreen
@@ -9,7 +9,7 @@
 <StartScreen>
     BoxLayout:
         orientation: 'vertical'
-        Toolbar:
+        MDTopAppBar:
             id: action_bar
             background_color: app.theme_cls.primary_color
             title: 'StartScreen'

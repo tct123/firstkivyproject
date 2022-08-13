@@ -9,7 +9,7 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'kivymd.toolbar'
+ModuleNotFoundError: No module named 'kivymd.tabs'
 
 During handling of the above exception, another exception occurred:
 
@@ -20,12 +20,12 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'kivymd.toolbar'
+ModuleNotFoundError: No module named 'kivymd.tabs'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/home/anonym/Dokumente/GitHub/firstkivyproject/main.py", line 31, in main
+  File "/home/anonym/Dokumente/GitHub/firstkivyproject/main.py", line 32, in main
     from program import Program  # основной класс программы
   File "/home/anonym/Dokumente/GitHub/firstkivyproject/program.py", line 16, in <module>
     from uix.startscreen import StartScreen
@@ -41,12 +41,12 @@ Traceback (most recent call last):
     self.execute_directives()
   File "/home/anonym/.local/lib/python3.10/site-packages/kivy/lang/parser.py", line 565, in execute_directives
     raise ParserException(self, ln,
-kivy.lang.parser.ParserException: Parser: File "/home/anonym/Dokumente/GitHub/firstkivyproject/uix/kvs/startscreen.kv", line 4:
+kivy.lang.parser.ParserException: Parser: File "/home/anonym/Dokumente/GitHub/firstkivyproject/uix/kvs/startscreen.kv", line 5:
 ...
-      2:#:kivy 1.9.1
       3:#:import _ localization._
->>    4:#:import Toolbar kivymd.toolbar.Toolbar
-      5:#:import MDTabbedPanel kivymd.tabs.MDTabbedPanel
+      4:#:import MDTopAppBar kivymd.uix.toolbar.toolbar
+>>    5:#:import MDTabbedPanel kivymd.tabs.MDTabbedPanel
       6:#:import MDTab kivymd.tabs.MDTab
+      7:#:import EmptyScreen uix.emptyscreen.EmptyScreen
 ...
-Unable to import package 'kivymd.toolbar.Toolbar'
+Unable to import package 'kivymd.tabs.MDTabbedPanel'
